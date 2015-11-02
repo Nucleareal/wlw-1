@@ -1,42 +1,17 @@
 WLWブックマークレット
 ====
 
-本ブックマークレットでは、&copy;SEGAが提供するWonderland Warsにおける[Wonderland.NET](https://wonderland-wars.net/)のマイキャストページの表示をカスタマイズする機能を提供します。
-
-![SAMPLE](sample.png)
-
-本機能では次の内容を実現します。
-* 勝率など通常では表示されない項目の表示する機能※1  
-* 前回の表示結果との差分を表示する機能※2  
-* 全キャスト勝率(全員)を表示する機能※3  
-※1: 勝利数、キャスト別評価から計算した結果なので、正確な数値でない可能性があります。  
-※2: Cookieに前回の表示結果を記録し、差分を計算して表示しています。  
-※3: 他のキャストの画面で、事前にブックマークを実行しておく必要があります。また、試合数が0のキャストは表示されません。
+説明は[本家](https://github.com/syara-temp/wlw)をご覧ください。
 
 ## リリース情報
 
 本ブックマークレットのリリース情報は次の通りです。
 
-* Version 1.9 -> 2015.08.30 Released
+* Version 1.9.1 -> 2015.11.02 Released  
+  * 全キャスト勝率(全員)に新キャスト「闇吉備津」までの新キャストの勝率が反映されるように変更しました。  
+(以下本家ログ)  
+* Version 1.9.0 -> 2015.08.30 Released  
   * 全キャスト勝率(全員)に新キャスト「大聖」と「かぐや」の勝率が反映されるように変更しました。  
-* Version 1.8 -> 廃番(cdn.rawgit.comのキャッシュ問題のため)
-* Version 1.7 -> 2015.06.28 Released
-  * 全キャスト勝率(全員)に新キャスト「スカーレット」の勝率が反映されるように変更しました。  
-* Version 1.6 -> 2015.05.22 Released
-  * 全キャスト勝率(全員)に新キャスト「リン」の勝率が反映されるように変更しました。  
-* Version 1.5 -> 2015.04.27 Released
-  * 試合数が0のキャストの勝率は非表示にしました。  
-* Version 1.4 -> 廃番(cdn.rawgit.comのキャッシュ問題のため)
-* Version 1.3 -> 2015.04.22 Released
-  * 各キャスト(全員)の勝率を表示する機能を追加しました。  
-* Version 1.2 -> 廃番(cdn.rawgit.comのキャッシュ問題のため)
-* Version 1.1 -> 2015.04.21 Released  
-  * 全キャスト勝率を表示する機能を追加しました。
-* Version 1.0 -> 2015.04.08 Released
-  * 勝率など通常では表示されない項目の表示する機能を追加しました。  
-  * 前回のプレイ結果との差分を表示する機能を追加しました。  
-
-バージョンアップは、[インストール](#インストール)の手順2を再実施してください。
 
 ## 注意制限
 
@@ -48,7 +23,9 @@ WLWブックマークレット
 * JavaScriptの本体が外部サイト(github)にあることから、利用者が認知し難いプログラムの改変  
 * Cookieの書き換えによるWonderland.NETの動作不良  
 
-## インストール
+## インストール  
+    
+<span style="color:red">本家wlwブックマークレットを利用していた方は再インストールが必要です。</span>
 
 次の手順で、ブックマークを登録してください。
 
@@ -57,8 +34,8 @@ WLWブックマークレット
 
 (2015.08.30 Updated)  
 ```
-javascript:(function(d,s){s=d.createElement('script');s.src='https://github.com/hattenheim/wlw-1/blob/master/wlw-cast-custom.min.js';d.body.appendChild(s);})(document)
-```
+javascript:(function(d,s){s=d.createElement('script');s.src='https://cdn.rawgit.com/Nucleareal/wlw-1/master/wlw-cast-custom.min.js';d.body.appendChild(s);})(document)
+```  
 * 手順3. [Wonderland.NET](https://wonderland-wars.net/)にアクセスし、マイキャスト> (キャスト選択)で全国対戦プレイデータの画面を表示してください。
 * 手順4. 手順1,2で作成したブックマークを実行してください。  
 * 手順5. 勝率や差分(赤字の括弧書き)が表示されたら準備完了です。※4,5  
@@ -84,5 +61,9 @@ javascript:(function(d,s){s=d.createElement('script');s.src='https://github.com/
 
 ## 著者
 
+(本家著者)
 Wonderland Wars ワンダーランドウォーズ  
 32ページ目 > [833 ID:GUHfLX0k0](https://github.com/syara-temp/wlw)
+
+(引き継ぎ)
+Nucleareal
