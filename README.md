@@ -27,14 +27,14 @@ WLWブックマークレット
 
 ## インストール  
     
-<span style="color:red; font-size: 2rem;">本家wlwブックマークレットを利用していた方は再インストールが必要です。</span>
+# Ver1.10(wlw本体1.11C)以前から使っていた場合再インストールが必要です。
 
 次の手順で、ブックマークを登録してください。
 
 * 手順1. 適当なブックマークを作成します。
 * 手順2. ブックマークの編集でURL部分を次のように書き換えてください。記述ミスを防止するため、コピー&ペーストを推奨します。  
 
-(2015.11.02 Updated)  
+(2015.12.16 Updated)  
 ```
 javascript:(function(d,s){s=d.createElement('script');s.src='https://rawgit.com/Nucleareal/wlw-1/master/wlw-cast-custom.min.js';d.body.appendChild(s);})(document)
 ```  
