@@ -36,7 +36,7 @@ WLWブックマークレット
 
 (2015.11.02 Updated)  
 ```
-javascript:(function(d,s){s=d.createElement('script');s.src='https://cdn.rawgit.com/Nucleareal/wlw-1/master/wlw-cast-custom.min.js';d.body.appendChild(s);})(document)
+javascript:(function(d,s){s=d.createElement('script');s.src='https://rawgit.com/Nucleareal/wlw-1/master/wlw-cast-custom.min.js';d.body.appendChild(s);})(document)
 ```  
 * 手順3. [Wonderland.NET](https://wonderland-wars.net/)にアクセスし、マイキャスト> (キャスト選択)で全国対戦プレイデータの画面を表示してください。
 * 手順4. 手順1,2で作成したブックマークを実行してください。  
